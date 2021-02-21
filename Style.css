@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+    background: rgb(228, 217, 203);
+    overflow: hidden;
+}
+
+.header {
+    height: 15%;
+    width: 85%;
+    margin: 10px auto 10px 7.5%;
+    border-radius: 10px;
+    background: rgb(75,5,0);
+    background: linear-gradient(0deg, rgba(90, 51, 29, 0.816) 0%, rgba(235, 55, 5, 0.534) 100%);
+}
+
+h1 {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Shadows Into Light Two', cursive;
+    color: rgb(255, 255, 255);
+}
+#content {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: auto auto auto; 
+    width: 85%;
+    height: 80%;
+    justify-content: space-between;
+    grid-row-gap: 10px;
+    margin-left: 7.5%;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.container {
+    background: rgb(75,17,0);
+    background: linear-gradient(0deg, rgba(87, 21, 1, 0.757) 0%, rgba(231, 122, 32, 0.348) 100%);
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.container:not(#card1):hover {
+    cursor: pointer;
+    box-shadow: 0 10px 5px rgb(88, 83, 83);
+}
+
+.image-container {
+    width: 85%;
+    height: 50%;
+    margin-left: 7.5%;
+    margin-top: 7.5%;
+}
+
+.image-container img {
+    max-width: 100%;
+    margin: auto;
+    opacity: 0.85;
+}
+
+.name-container {
+    max-width:100% ;
+}
+
+.name-container p {
+    margin: 0;
+    font-size: 1.8rem;
+    color: rgb(240, 240, 240);
+}
+
+#card1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    clip-path: initial;
+}
+
+#spotlightVideo {
+    padding-top: 5%;
+}
+
+p {
+    padding-top: 20px;
+}
